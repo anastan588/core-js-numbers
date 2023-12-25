@@ -344,10 +344,12 @@ function getSumOfDigits(num) {
  *   16  => true
  *   15  => false
  */
-function isPowerOfTwo(/* num */) {
-  throw new Error('Not implemented');
+function isPowerOfTwo(num) {
+  if (num <= 0) {
+    return false;
+  }
+  return Math.log2(num) % 1 === 0;
 }
-
 /**
  * Returns the sine of a number.
  *
@@ -650,8 +652,15 @@ function getHypotenuse(a, b) {
  * 10 => 5
  * 15 => 8
  */
-function getCountOfOddNumbers(/* number */) {
-  throw new Error('Not implemented');
+function getCountOfOddNumbers(number) {
+  // console.log(number);
+  let count = 0;
+  for (let i = 0; i <= Math.abs(number); i += 1) {
+    if (i % 2 !== 0) {
+      count += 1;
+    }
+  }
+  return count;
 }
 
 module.exports = {
