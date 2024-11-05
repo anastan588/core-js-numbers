@@ -50,8 +50,6 @@ function getCircleCircumference(radius) {
  *  -3, 3  => 0
  */
 function getAverage(value1, value2) {
-  // console.log(value1);
-  // console.log(value2);
   let result = 0;
   if (value1 === Number.MAX_VALUE && value2 === Number.MAX_VALUE) {
     result = Number.MAX_VALUE;
@@ -114,7 +112,6 @@ function getLinearEquationRoot(a, b) {
  *   (0,1) (0,1)     => 0
  */
 function getAngleBetweenVectors(x1, y1, x2, y2) {
-  // console.log(x1, y1, x2, y2);
   return Math.abs(Math.atan2(x1, y1) - Math.atan2(x2, y2));
 }
 
@@ -215,7 +212,6 @@ function roundToPowerOfTen(num, pow) {
  *   17 => true
  */
 function isPrime(n) {
-  // console.log(n);
   if (n > 2) {
     for (let i = 2; i < n; i += 1) {
       if (n % i === 0) {
@@ -656,7 +652,6 @@ function getHypotenuse(a, b) {
  * 15 => 8
  */
 function getCountOfOddNumbers(number) {
-  // console.log(number);
   let count = 0;
   for (let i = 0; i <= Math.abs(number); i += 1) {
     if (i % 2 !== 0) {
